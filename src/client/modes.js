@@ -144,6 +144,7 @@ function setMode (nextMode, event) {
       )
     }
     modes[currentMode].onExit(event)
+    // @todo: set icon here?
     modes[nextMode].onEnter(event)
   }
   currentMode = nextMode

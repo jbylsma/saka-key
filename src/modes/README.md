@@ -54,6 +54,7 @@ interface Client {
   focus?: (event: FocusEvent) => string,
   click?: (event: MouseEvent) => string,
   mousedown?: (event: MouseEvent) => string,
+  icon?: => string,
   // Async message callbacks that return either
   // 1. the Mosi get() value https://github.com/eejdoowad/mosi or
   // 2. an object containg the nextMode and the Mosi get() value
@@ -80,6 +81,7 @@ const defaultModeObject = {
   focus: () => 'Same',
   click: () => 'Same',
   mousedown: () => 'Same',
+  icon: 'logo.png',
   messages: {}
 };
 ```
